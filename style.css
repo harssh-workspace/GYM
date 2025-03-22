@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: "Open Sans", sans-serif;
+}
+
+.for-img {
+    height: 750px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/imgs/img-bk.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: sticky;
+}
+
+header {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.186);
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    margin-right: 0rem;
+}
+
+header .left img {
+    height: 100px;
+    width: 105px;
+}
+
+header .left .logo-txt {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+header nav ul li a#home {
+    border-bottom: 1px solid white;
+}
+
+header nav ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+header .right .trial {
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 0.5rem;
+    padding: 10px 35px 10px 35px;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+    background-color: #97fb57;
+    outline: none;
+    border-radius: 45px;
+    border: none;
+    overflow: hidden;
+}
+
+header .right .trial:hover {
+    color: black;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(24, 197, 24);
+}
+
+hr {
+    border-color: rgb(255, 255, 255);
+}
+
+.main-page section {
+    line-height: 1.3;
+    text-align: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page .headings {
+    width: 600px;
+}
+
+.main-page .headings h1,
+h3,
+p {
+    color: white;
+}
+
+.main-page .headings h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+}
+
+.main-page .headings h3 {
+    font-family: "Raleway", sans-serif;
+    margin-top: 2rem;
+    /* font-size: 40px; */
+}
+
+.main-page .headings p {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2rem;
+    color: #e1e1e1;
+    /* font-size: 40px; */
+}
+
+.main-page section main button {
+    margin-top: 2rem;
+}
+
+.main-page section main button {
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 0.5rem;
+    padding: 10px 35px 10px 35px;
+    font-size: 15px;
+    color: black;
+    background-color: #97fb57;
+    transition: all 0.3s ease;
+    outline: none;
+    border-radius: 45px;
+    border: none;
+    overflow: hidden;
+}
+
+.main-page section main button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+    color: black;
+    background-color: rgb(24, 197, 24);
+}
+
+.why-choose-us section {
+    margin-top: 7rem;
+    color: white;
+}
+
+.why-choose-us section h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.why-choose-us section p.belowh1 {
+    margin-top: 3rem;
+    padding-right: 100px;
+    padding-left: 100px;
+    font-family: Poppins, sans-serif;
+    color: #7b7b7b;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.why-choose-us h3 {
+    margin-top: 3rem;
+}
+
+.cards {
+    justify-items: center; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;  
+    padding: 20px;
+}
+
+.cards img {
+    margin-top: 25px;
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.cards img:hover {
+    margin-top: 0px;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 200px;
+    border-radius: 0;
+}
+
+.cards .rows{
+    overflow: hidden;
+    justify-content: baseline;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #434343;
+    border-radius: 10px;
+}
