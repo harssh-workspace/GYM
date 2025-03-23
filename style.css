@@ -185,9 +185,22 @@ p {
     color: #EEEEEE;
 }
 
-.why-choose-us h3 {
-    border-bottom: 1px solid #EEEEEE;
-    margin-top: 3rem;
+.cards .rows p {
+    margin-top: 0.7rem;
+    text-align: center;
+    width: 290px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.cards .rows h3 {
+    text-align: center;
+    margin-top: 13.89rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.cards .rows:hover h3 {
+    text-decoration: underline;
 }
 
 .cards {
@@ -210,7 +223,7 @@ p {
 }
 
 .cards img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 2;
     margin-top: 0px;
     transition: 0.2s;
@@ -226,14 +239,15 @@ p {
     /* justify-content: sta; */
     align-items: center;
     width: 300px;
-    height: 350px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     background-color: #434343;
     border-radius: 10px;
 }
+
 .cards .rows:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     border-radius: 0;
     z-index: 2;
     margin-top: 0px;
