@@ -63,10 +63,6 @@ header nav ul li a {
     font-size: large;
 }
 
-header nav ul li a#home {
-    border-bottom: 1px solid white;
-}
-
 header nav ul li a:hover {
     border-bottom: 1px solid white;
 }
