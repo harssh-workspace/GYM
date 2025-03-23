@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Harshh GYM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #5f7252;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        h1,
+        h3,
+        h6 {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        header {
+            background-color: #121212;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.186);
+        }
+
+        header .left {
+            display: flex;
+            align-items: center;
+            padding-left: 3rem;
+        }
+
+        header .left img {
+            height: 100px;
+            width: 105px;
+        }
+
+        header .left .logo-txt {
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+        }
+
+        header nav ul {
+            display: flex;
+        }
+
+        header nav ul li {
+            list-style: none;
+        }
+
+        header nav ul li a {
+            margin: 0.5rem;
+            padding: 1rem;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+
+        header nav ul li a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        header .right {
+            padding-right: 3rem;
+        }
+
+        header .right .trial {
+            cursor: pointer;
+            font-family: "Open Sans", sans-serif;
+            margin-left: 0.5rem;
+            padding: 10px 35px 10px 35px;
+            font-size: larger;
+            font-weight: bold;
+            color: black;
+            background-color: #97fb57;
+            outline: none;
+            border-radius: 45px;
+            border: none;
+            overflow: hidden;
+        }
+
+        header .right .trial:hover {
+            color: black;
+            transition: 0.2s ease-in-out;
+            background-color: rgb(24, 197, 24);
+        }
+
+        hr {
+            border-color: rgb(255, 255, 255);
+        }
+
+        footer {
+            font-family: "Montserrat", sans-serif;
+            margin-top: 7rem;
+            /* margin-left: 3rem;
+            margin-right: 3rem; */
+            background: #121212;
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer-section {
+            margin-left: 15rem;
+            margin-right: 15rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+
+            margin: 10px 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footer-section a:hover {
+            color: #fc0000f1;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            font-size: 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="membership">
+        <header>
+            <div class="left">
+                <img src="/imgs/logo.png" alt="logo">
+                <h1 class="logo-txt">Harshh GYM</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                    <li><a href="blogs.html/index.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+                <button class="trial" type="button">7 days for free trial</button>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="conatct">
+            <form action="">
+                <label for="">Name</label>
+                <input type="text" placeholder="name" />
+
+                <label for="">Email</label>
+                <input type="text" placeholder="name" />
+
+                <label for="">Phone Number</label>
+                <input type="text" placeholder="name" />
+
+                <select name="" id="choose">
+                    <option value="sfdsd">Membership Interest</option>
+                    <option value="sfdsd">Month to month</option>
+                    <option value="sfdsd">6 Months</option>
+                    <option value="sfdsd">1 Year</option>
+                    <option value="sfdsd">Else</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="#membership">Membership</a>
+                    <a href="blogs.html/index.html">Blogs</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Harshh GYM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
