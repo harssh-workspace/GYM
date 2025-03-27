@@ -11,9 +11,7 @@ body {
     background-color: #121212;
     font-family: "Open Sans", sans-serif;
 }
-h1, h3, h6{
-    font-family: 'Oswald', sans-serif;
-}
+
 .for-img {
     height: 1000px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/imgs/img-bk.jpg');
