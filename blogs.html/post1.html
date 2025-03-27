@@ -1,11 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Cardio vs. Strength Training</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #121212;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.186);
+        }
+
+        header .left {
+            display: flex;
+            align-items: center;
+            padding-left: 3rem;
+        }
+
+        header .left img {
+            height: 100px;
+            width: 105px;
+        }
+
+        header .left .logo-txt {
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+        }
+
+        header nav ul {
+            display: flex;
+        }
+
+        header nav ul li {
+            list-style: none;
+        }
+
+        header nav ul li a {
+            margin: 0.5rem;
+            padding: 1rem;
+            text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+
+        header nav ul li a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        header .right {
+            padding-right: 3rem;
+        }
+
+        header .right .trial {
+            cursor: pointer;
+            font-family: "Open Sans", sans-serif;
+            margin-left: 0.5rem;
+            padding: 10px 35px 10px 35px;
+            font-size: larger;
+            font-weight: bold;
+            color: black;
+            background-color: #97fb57;
+            outline: none;
+            border-radius: 45px;
+            border: none;
+            overflow: hidden;
+        }
+
+        header .right .trial:hover {
+            color: black;
+            transition: 0.2s ease-in-out;
+            background-color: rgb(24, 197, 24);
+        }
+
+        hr {
+            border-color: rgb(255, 255, 255);
+        }
+
+        img {
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            color: #007bff;
+        }
+
+        .container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .container ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #007bff;
+        }
+
+
+        footer {
+            font-family: "Montserrat", sans-serif;
+            margin-top: 7rem;
+            /* margin-left: 3rem;
+            margin-right: 3rem; */
+            background: #121212;
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer-section {
+            margin-left: 15rem;
+            margin-right: 15rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+
+            margin: 10px 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footer-section a:hover {
+            color: #fc0000f1;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            font-size: 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="membership">
+        <header>
+            <div class="left">
+                <img src="/imgs/logo.png" alt="logo">
+                <h1 class="logo-txt">Harshh GYM</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/membership.html">Membership</a></li>
+                    <li><a href="/blogs.html/index.html">Blogs</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+                <button class="trial" type="button">7 days for free trial</button>
+            </div>
+        </header>
+    </div>
+    <div class="headings">
+        <h1 style="text-align: center; margin-top: 2rem; color: #007bff;">The Ultimate Beginner’s Guide to Gym Workouts</h1>
+        <p style="text-align: center; margin-top: 2rem; color: #007bff;">Your step-by-step guide to starting your fitness journey.</p>
+    </div>
+
+    <div class="img">
+        <img src="/imgs/blog-img-1.jpg" alt="photo">
+    </div>
+
+    <div>
+        <aside class="container">
+            <h2>Quick Tips</h2>
+            <ul>
+                <li>Start with a full-body workout.</li>
+                <li>Focus on form, not heavy weights.</li>
+                <li>Stay hydrated and eat well.</li>
+                <li>Take rest days for recovery.</li>
+            </ul>
+        </aside>
+
+        <main>
+            <section class="container">
+                <h2>Introduction</h2>
+                <p>Starting your gym journey can feel overwhelming, but with the right approach, you’ll build
+                    strength and confidence. This guide covers everything you need to know as a beginner, from
+                    warm-ups to workout plans.</p>
+            </section>
+
+            <section class="container">
+                <h2>Why Warm-Up is Essential</h2>
+                <p>Warming up prepares your muscles and joints for exercise, reducing the risk of injury. A simple
+                    5–10 minute warm-up can include:</p>
+                <ul>
+                    <li>Jumping jacks</li>
+                    <li>Arm circles</li>
+                    <li>Light jogging</li>
+                    <li>Dynamic stretches</li>
+                </ul>
+            </section>
+
+            <section class="container">
+                <h2>Basic Gym Exercises for Beginners</h2>
+                <h2>1. Squats</h3>
+                <p>Squats strengthen your legs and core. Start with bodyweight squats before adding weights.</p>
+
+                <h2>2. Bench Press</h3>
+                <p>A great upper-body exercise to build chest and arm muscles. Start with light dumbbells before
+                    moving to barbells.</p>
+
+                <h2>3. Deadlifts</h3>
+                <p>Focus on proper form when doing deadlifts to avoid injuries. This exercise targets the back,
+                    glutes, and legs.</p>
+
+                <h2>4. Pull-Ups</h3>
+                <p>Pull-ups improve upper-body strength. If you can't do a full pull-up, start with assisted
+                    machines or resistance bands.</p>
+
+                <h2>5. Planks</h3>
+                <p>Core strength is essential for overall fitness. Start with 30-second planks and gradually
+                    increase the time.</p>
+            </section>
+
+            <section class="container">
+                <h2>Nutrition & Diet Tips</h2>
+                <p>Your diet plays a huge role in your gym progress. Follow these basic guidelines:</p>
+                <ul>
+                    <li>Consume a balanced diet rich in protein, carbs, and healthy fats.</li>
+                    <li>Drink plenty of water throughout the day.</li>
+                    <li>Avoid processed foods and excess sugar.</li>
+                    <li>Eat a protein-rich meal after workouts to aid muscle recovery.</li>
+                </ul>
+            </section>
+
+            <section class="container">
+                <h2>Common Mistakes to Avoid</h2>
+                <ul>
+                    <li>Skipping warm-ups and cool-downs.</li>
+                    <li>Lifting heavy weights with improper form.</li>
+                    <li>Not getting enough rest between workouts.</li>
+                    <li>Focusing only on one muscle group.</li>
+                </ul>
+            </section>
+
+            <section class="container">
+                <h2>Final Thoughts</h2>
+                <p>Consistency is key when it comes to fitness. Follow a structured plan, track your progress, and
+                    most importantly, enjoy the process!</p>
+            </section>
+        </main>
+    </div>
+
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="/index.html">Home</a>
+                    <a href="/index.html#about">About</a>
+                    <a href="/membership.html">Membership</a>
+                    <a href="/blogs.html/index.html">Blogs</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Harshh GYM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

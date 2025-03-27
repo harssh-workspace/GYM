@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Harshh GYM</title>
+    <title>Cardio vs. Strength Training</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         * {
@@ -17,17 +16,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        body {
-            background-color: #5f7252;
-            font-family: "Open Sans", sans-serif;
-        }
-
-        h1,
-        h3,
-        h6 {
-            font-family: 'Oswald', sans-serif;
         }
 
         header {
@@ -103,86 +91,40 @@
         hr {
             border-color: rgb(255, 255, 255);
         }
-        
-        .container {
-            margin-top: 6rem;
+
+        img{
+            max-width: 800px;
             display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        
-        .contact-right {
-            height: 500px;
-            width: 400px;
-            background-color: white;
-            padding: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 20px;
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        }
-        
-        .contact-form {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form h1{
-            color: #5f7252;
-            text-align: center;
-            font-size: 35px;
-            font-family: "Montserrat", sans-serif;
-        }
-        .contact-form label{
-            /* color: #5f7252; */
-            margin-top: 1.5rem;
-            font-size: 14px;
-        }
-        .contact-form select{
-            /* color: #5f7252; */
-            margin-top: 3rem;
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 14px;
-            outline: none;
-            border: 1px solid #5f7252;
-        }
-        .contact-form input{
-            /* color: #5f7252; */
-            border-radius: 5px;
-            margin-top: 10px;
-            padding: 10px;
-            font-size: 14px;
-            outline: none;
-            border: 1px solid #5f7252; 
+            justify-content: center;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
         }
 
-        .contact-left {
-            color: white;
-            width: 400px;
-            display: flex;
-            flex-direction: column;
-            /* justify-content: left; */
-            text-align: left;
-            /* align-items: center; */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .contact-left h1{
-            /* text-align: left; */
-            color: white;
-            font-size: 65px;
-            font-family: "Montserrat", sans-serif;
-            
+
+        .container h2 {
+            color: #007bff;
         }
-        .contact-left p{
-            margin-top: 2rem;
-            font-size: 1.5rem;
-            
+
+        .container ul {
+            list-style-type: none;
+            padding: 0;
         }
-        .contact-left i{
-            color: white;
-            font-size: 30px;
-            margin-right: 20px;
+
+        .container ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #007bff;
         }
 
         footer {
@@ -252,11 +194,11 @@
             </div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="membership.html">Membership</a></li>
-                    <li><a href="blogs.html/index.html">Blogs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/membership.html">Membership</a></li>
+                    <li><a href="/blogs.html/index.html">Blogs</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="right">
@@ -265,47 +207,73 @@
         </header>
     </div>
 
-    <div class="container">
-        <div class="contact-left">
-            <h1>Get In Touch</h1>
-            <p>“Get in touch with our team today to start your journey with us!”</p>
-            <p><i class="fa-solid fa-envelope"></i>contact@harshhGYM.com</p>
-            <p><i class="fa-solid fa-phone"></i>32645 89531</p>
-            <p><i class="fa-solid fa-location-dot"></i>6736 S Sherbourne Dr Mehsana, 384001</p>
+    <h1 style="text-align: center; color: #007bff; margin-bottom: 2rem;">Cardio vs. Strength Training: Which One is Right for You?</h1>
 
-        </div>
-        <div class="contact-right">
-            <form class="contact-form" action="">
-                <h1>Contact Us</h1>
-                <label for="">Name</label>
-                <input id="name" type="text" placeholder="Name" />
-
-                <label for="">Email</label>
-                <input id="email" type="text" placeholder="Email" />
-
-                <label for="">Phone Number</label>
-                <input id="ph-number" type="text" placeholder="Phone number" />
-
-                <select name="period-choose" id="choose">
-                    <option name="period-choose" value="">Membership Interest</option>
-                    <option name="period-choose" value="">Month to month</option>
-                    <option name="period-choose" value="">6 Months</option>
-                    <option name="period-choose" value="">1 Year</option>
-                    <option name="period-choose" value="">Else</option>
-                </select>
-            </form>
-        </div>
+    <div class="img">
+        <img src="/imgs/blog-img-3.jpg" alt="photo">
     </div>
+
+    <section class="container">
+
+        <h2>The Benefits of Cardio</h2>
+        <p>Cardiovascular exercise, or simply cardio, refers to any activity that increases your heart rate and helps
+            improve your overall endurance.</p>
+
+        <ul>
+            <li><strong>Improves heart health:</strong> Strengthens the heart and lungs, reducing cardiovascular risks.
+            </li>
+            <li><strong>Burns calories:</strong> A great way to lose weight and maintain a healthy body.</li>
+            <li><strong>Boosts endurance:</strong> Enhances stamina, making daily activities easier.</li>
+            <li><strong>Enhances mood:</strong> Releases endorphins, reducing stress and improving well-being.</li>
+        </ul>
+    </section>
+
+    <section class="container">
+        <h2>The Benefits of Strength Training</h2>
+        <p>Strength training involves using weights, resistance bands, or body weight to build muscle and improve
+            overall strength.</p>
+
+        <ul>
+            <li><strong>Builds muscle mass:</strong> Increases strength and muscle tone.</li>
+            <li><strong>Boosts metabolism:</strong> More muscle means a higher resting metabolic rate.</li>
+            <li><strong>Strengthens bones:</strong> Helps prevent osteoporosis and improves bone density.</li>
+            <li><strong>Enhances functional fitness:</strong> Improves balance, coordination, and daily movement.</li>
+        </ul>
+    </section>
+
+    <section class="container">
+        <h2>Which One Should You Choose?</h2>
+        <p>Your choice depends on your fitness goals:</p>
+        <ul>
+            <li><strong>For weight loss:</strong> A mix of cardio and strength training is ideal.</li>
+            <li><strong>For muscle gain:</strong> Strength training is the best choice.</li>
+            <li><strong>For endurance:</strong> Cardio helps improve stamina and heart health.</li>
+            <li><strong>For overall health:</strong> A balanced routine is recommended.</li>
+        </ul>
+    </section>
+
+    <section class="container">
+        <h2>Can You Combine Both?</h2>
+        <p>Absolutely! A well-rounded fitness plan includes both cardio and strength training.</p>
+        <p>For example, you can do strength training 3 days a week and cardio 2–3 days a week.</p>
+    </section>
+
+    <section class="container">
+        <h2>Final Thoughts</h2>
+        <p>There’s no single answer to the cardio vs. strength training debate. The key is to find a routine that aligns
+            with your goals and keeps you motivated!</p>
+    </section>
+
     <footer>
         <div class="container-footer">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Quick Links</h3>
-                    <a href="index.html">Home</a>
-                    <a href="index.html#about">About</a>
-                    <a href="membership.html">Membership</a>
-                    <a href="blogs.html/index.html">Blogs</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="/index.html">Home</a>
+                    <a href="/index.html#about">About</a>
+                    <a href="/membership.html">Membership</a>
+                    <a href="/blogs.html/index.html">Blogs</a>
+                    <a href="/contact.html">Contact</a>
                 </div>
                 <div class="footer-section">
                     <h3>Connect With Us</h3>
