@@ -1,0 +1,11 @@
+@media (max-width: 600px){
+    .header{
+        display: none;
+    } 
+
+    .reviews-all {
+        display: grid;
+        grid-template-columns: repeat(1, 0fr);
+        gap: 10px;
+    }       
+} 

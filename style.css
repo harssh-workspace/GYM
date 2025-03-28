@@ -21,6 +21,7 @@ body {
 }
 
 header {
+    overflow: hidden;
     display: flex;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -91,6 +92,7 @@ hr {
 }
 
 .main-page section {
+    overflow: hidden;
     line-height: 1.3;
     text-align: center;
     height: 850px;
@@ -101,7 +103,7 @@ hr {
 }
 
 .main-page .headings {
-    width: 600px;
+    max-width: 550px;
 }
 
 .main-page .headings h1, .main-page .headings h3, .main-page .headings p {

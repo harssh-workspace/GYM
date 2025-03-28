@@ -12,6 +12,7 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
         * {
             scroll-behavior: smooth;
             margin: 0;
@@ -97,59 +98,12 @@
         hr {
             border-color: rgb(255, 255, 255);
         }
-        
+
         .container {
             margin-top: 6rem;
             display: flex;
             justify-content: space-around;
             align-items: center;
-        }
-        
-        .contact-right {
-            height: 500px;
-            width: 400px;
-            background-color: white;
-            padding: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 20px;
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        }
-        
-        .contact-form {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form h1{
-            color: #5f7252;
-            text-align: center;
-            font-size: 35px;
-            font-family: "Montserrat", sans-serif;
-        }
-        .contact-form label{
-            /* color: #5f7252; */
-            margin-top: 1.5rem;
-            font-size: 14px;
-        }
-        .contact-form select{
-            /* color: #5f7252; */
-            margin-top: 3rem;
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 14px;
-            outline: none;
-            border: 1px solid #5f7252;
-        }
-        .contact-form input{
-            /* color: #5f7252; */
-            border-radius: 5px;
-            margin-top: 10px;
-            padding: 10px;
-            font-size: 14px;
-            outline: none;
-            border: 1px solid #5f7252; 
         }
 
         .contact-left {
@@ -161,22 +115,97 @@
             text-align: left;
             /* align-items: center; */
         }
-        .contact-left h1{
+
+        .contact-left h1 {
             /* text-align: left; */
             color: white;
             font-size: 65px;
             font-family: "Montserrat", sans-serif;
-            
+
         }
-        .contact-left p{
+
+        .contact-left p {
             margin-top: 2rem;
             font-size: 1.5rem;
-            
+
         }
-        .contact-left i{
+
+        .contact-left i {
             color: white;
             font-size: 30px;
             margin-right: 20px;
+        }
+
+        .contact-right {
+            height: 500px;
+            width: 400px;
+            background-color: white;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+
+        .contact-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form h1 {
+            margin-top: -1.5rem;
+            color: #5f7252;
+            text-align: center;
+            font-size: 35px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .contact-form label {
+            /* color: #5f7252; */
+            margin-top: 1.5rem;
+            font-size: 14px;
+        }
+
+        .contact-form select {
+            /* color: #5f7252; */
+            margin-top: 1.5rem;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            outline: none;
+            border: 1px solid #5f7252;
+        }
+
+        .contact-form input {
+            /* color: #5f7252; */
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 14px;
+            outline: none;
+            border: 1px solid #5f7252;
+        }
+
+
+        .contact-form .sbt-btn {
+            cursor: pointer;
+            outline: none;
+            text-transform: uppercase;
+            color: white;
+            background-color: #5f7252;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+        }
+
+        .contact-form .sbt-btn:hover {
+            transition: 0.3s ease-in-out;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            background-color: #769e5c;
         }
 
         footer {
@@ -273,12 +302,15 @@
                 <h1>Contact Us</h1>
                 <label for="">Name</label>
                 <input id="name" type="text" placeholder="Name" />
+                <p id="demo"></p>
 
                 <label for="">Email</label>
                 <input id="email" type="text" placeholder="Email" />
+                <p id="demo"></p>
 
                 <label for="">Phone Number</label>
                 <input id="ph-number" type="text" placeholder="Phone number" />
+                <p id="demo"></p>
 
                 <select name="period-choose" id="choose">
                     <option name="period-choose" value="">Membership Interest</option>
@@ -287,6 +319,8 @@
                     <option name="period-choose" value="">1 Year</option>
                     <option name="period-choose" value="">Else</option>
                 </select>
+
+                <button class="sbt-btn" onclick="submitBtn(event)" type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -316,6 +350,23 @@
             </div>
         </div>
     </footer>
+    <script>
+        function submitBtn(event) {
+            event.preventDefault(); // Prevent form submission
+
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let phone = document.getElementById("ph-number").value.trim();
+
+            if (name === "" || email === "" || phone === "") {
+                alert("All fields are required!");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
 </body>
 
 </html>
